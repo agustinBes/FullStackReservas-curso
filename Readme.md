@@ -42,10 +42,7 @@ Necesitamos incorporar para trabajar objetos JSON la libreria [Gson de google](h
 
  Comenzaremos trabajando con el backend. Debemos desarrollar las entidades,servicios y controladores requeridos con las reglas de negocio propuestas en el curso.
 
+creamos la entidad y los getters y setters con Lombok.
+Utilizando Spring Data JPA con Hibernate  mapeamos la entidad para preparar la llegada de los datos a la BDD
 
-#### Controller
-
-#### Repository
-
-#### Service
 
