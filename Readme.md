@@ -1,6 +1,6 @@
 # Bienvenidos
 
-![Banner de github](./multimedia/Banner-3.jpg)
+![Banner de github](./reservation-backend/multimedia/Banner-3.jpg)
 ***  
 Desarrollaremos un proyecto Full Stack de Reservas basado en la guia y orientacion del curso dictado por DevSeniorCode 
 El repositorio del proyecto se encuentra haciendo click [AQUI](https://github.com/cesardiaz-utp/DevSeniorCode-CursoFullStackReservas)
@@ -38,7 +38,7 @@ Necesitamos incorporar para trabajar objetos JSON la libreria [Gson de google](h
 
 ## Crearemos una aplicacion utilizando un modelo de capas Dividido en varias etapas
 
->> ![Modelo de capas](./multimedia/ModeloCapasSpringBoot.png)
+>> ![Modelo de capas](./reservation-backend/multimedia/ModeloCapasSpringBoot.png)
 
  Comenzaremos trabajando con el backend. Debemos desarrollar las entidades,servicios y controladores requeridos con las reglas de negocio propuestas en el curso.
 
