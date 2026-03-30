@@ -11,21 +11,27 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/gestion")
+@RequestMapping("/gestion/reservas")
 public class reservacionController {
 @Autowired
 private reservacionService reservacionService;
 //----------------------------------------------------------
 
-@GetMapping("/reservas")
+@GetMapping("")
     public List<Reservacion> listarReservas(){
     return reservacionService.findAll();}
 //----------------------------------------------------------
 @PostMapping("/reserva")
-    public ResponseEntity<Reservacion> Reservar(@RequestBody Reservacion reservacion){
-    Reservacion res= reservacionService.crearReserva(reservacion);
-    return new ResponseEntity<>(res, HttpStatus.CREATED);}
+    public ResponseEntity<?> Reservar(@RequestBody Reservacion reservacion){
+    try {
+        Reservacion res = reservacionService.crearReserva(reservacion);
+        return new ResponseEntity<>(res, HttpStatus.CREATED);
+    } catch (ReservaExistException e) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+    }
+}
 //----------------------------------------------------------
 @GetMapping("/reserva/{id}")
 public ResponseEntity<?> buscarReserva(@PathVariable Long id){
@@ -39,8 +45,13 @@ public ResponseEntity<?> buscarReserva(@PathVariable Long id){
 
 //----------------------------------------------------------
 @DeleteMapping("/reserva/{id}")
-public ResponseEntity<Reservacion> eliminarReserva(@PathVariable Long id){
-  Reservacion res=reservacionService.cancelarReserva(id);
-     return  ResponseEntity.ok(res);}
+public ResponseEntity<?> eliminarReserva(@PathVariable Long id){
+    try {
+        Reservacion res = reservacionService.cancelarReserva(id);
+        return ResponseEntity.ok(res);
+    } catch (ReservaExistException e) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+    }
+}
     //----------------------------------------------------------
 }
