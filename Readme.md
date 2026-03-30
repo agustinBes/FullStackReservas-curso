@@ -45,4 +45,30 @@ Necesitamos incorporar para trabajar objetos JSON la libreria [Gson de google](h
 creamos la entidad y los getters y setters con Lombok.
 Utilizando Spring Data JPA con Hibernate  mapeamos la entidad para preparar la llegada de los datos a la BDD
 
+---
 
+## Cambios Realizados - Sprint Final
+
+### Backend
+- ✅ Soporte para base de datos H2 en desarrollo (pom.xml actualizado)
+- ✅ Mejoras en validaciones del controlador ReservacionController
+- ✅ Configuración de application.properties para H2 (create-drop en dev)
+
+### Frontend (Angular 17)
+- ✅ Diseño responsivo completo (mobile-first)
+- ✅ Header limpio con logo del Hotel Paradise
+- ✅ Banner atractivo con gradiente rosa-rojo y características del hotel
+- ✅ Footer con información de contacto y servicios
+- ✅ Tabla de reservas mejorada con estilos modernos
+- ✅ Media queries optimizadas para 1440px, 1024px, 768px, 640px y 480px
+- ✅ Componentes modulares organizados en subcarpetas
+- ✅ Colores: Gradiente azul-púrpura (#667eea → #764ba2)
+
+### Servicios en Footer
+- Entretenimiento 24/7
+- Masajes y Relajación
+- Tareas de Mantenimiento
+- Concierge Personalizado
+- Tours y Excursiones
+
+---
