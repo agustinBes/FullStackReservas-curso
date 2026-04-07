@@ -35,7 +35,6 @@ incorporar las siguientes dependencias:
 Necesitamos incorporar para trabajar objetos JSON la libreria [Gson de google](https://github.com/google/gson) o [jackson](https://mvnrepository.com/artifact/tools.jackson.core/jackson-core) disponible en maven
 
 ***  
-
 ## Crearemos una aplicacion utilizando un modelo de capas Dividido en varias etapas
 
 >> ![Modelo de capas](./reservation-backend/multimedia/ModeloCapasSpringBoot.png)
@@ -54,21 +53,32 @@ Utilizando Spring Data JPA con Hibernate  mapeamos la entidad para preparar la l
 - ✅ Mejoras en validaciones del controlador ReservacionController
 - ✅ Configuración de application.properties para H2 (create-drop en dev)
 
+#### Estructura de proyecto
+![estructura-back.jpg](img/estructura-back.jpg)
+
 ### Frontend (Angular 17)
+Usamos la IA para generar un header,footer y banner fictios con fines practicos del proyecto
+
+#### Estructura de proyecto
+![estructura-front.jpg](img/estructura-front.jpg)
+
 - ✅ Diseño responsivo completo (mobile-first)
-- ✅ Header limpio con logo del Hotel Paradise
-- ✅ Banner atractivo con gradiente rosa-rojo y características del hotel
+- ✅ Header limpio 
+- ✅ Banner atractivo con gradiente rosa-rojo y servicios de la empresa
 - ✅ Footer con información de contacto y servicios
 - ✅ Tabla de reservas mejorada con estilos modernos
 - ✅ Media queries optimizadas para 1440px, 1024px, 768px, 640px y 480px
 - ✅ Componentes modulares organizados en subcarpetas
 - ✅ Colores: Gradiente azul-púrpura (#667eea → #764ba2)
 
-### Servicios en Footer
-- Entretenimiento 24/7
-- Masajes y Relajación
-- Tareas de Mantenimiento
-- Concierge Personalizado
-- Tours y Excursiones
+#### Vistas del sitio
 
----
+![inicio1.jpg](img/inicio1.jpg)  
+
+![inicio2.jpg](img/inicio2.jpg)
+
+![new-reserva.jpg](img/new-reserva.jpg)  
+
+   Final del Readme  
+
+![Banner de github](./reservation-backend/multimedia/Banner-3.jpg)
